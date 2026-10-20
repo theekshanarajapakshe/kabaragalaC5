@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kabaragala Summit Camp — Nov 14–15, 2026</title>
+<meta name="theme-color" content="#060d1f">
+<meta property="og:title" content="Kabaragala Summit Camp — Class Crew x10">
+<meta property="og:description" content="Nov 14–15, 2026 · Pettah to the 1,506 m roof of Dolosbage. Plan, roles, money, gear — everything in one page.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a1630'/%3E%3Cpath d='M4 24 L13 9 L18 17 L21 12 L28 24 Z' fill='%23ffb454'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#060d1f; --bg2:#0a1630; --panel:rgba(13,27,58,.55); --panel2:rgba(18,37,76,.5);
+  --line:rgba(127,208,255,.16); --line2:rgba(127,208,255,.32);
+  --txt:#eaf2ff; --mut:#93a5c8; --dim:#5f7396;
+  --amber:#ffb454; --orange:#ff8a3d; --ice:#7fd0ff; --green:#6ee7a0; --red:#ff6b6b;
+  --disp:'Anton', 'Arial Narrow', Impact, sans-serif;
+  --body:'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--txt);font-family:var(--body);line-height:1.6;overflow-x:hidden}
+::selection{background:rgba(255,180,84,.35)}
+a{color:var(--ice);text-decoration:none}
+.wrap{max-width:1060px;margin:0 auto;padding:0 22px}
+section{padding:72px 0 30px;scroll-margin-top:64px}
+
+/* ---------- NAV ---------- */
+.nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(6,13,31,.78);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav-in{max-width:1060px;margin:0 auto;padding:10px 22px;display:flex;align-items:center;gap:18px}
+.brand{font-family:var(--disp);letter-spacing:.06em;font-size:17px;color:var(--txt);white-space:nowrap;display:flex;align-items:center;gap:8px}
+.brand b{color:var(--amber);font-weight:400}
+.navlinks{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none;margin-left:auto}
+.navlinks::-webkit-scrollbar{display:none}
+.navlinks a{color:var(--mut);font-size:12.5px;font-weight:600;padding:6px 10px;border-radius:8px;white-space:nowrap;transition:.2s}
+.navlinks a:hover,.navlinks a.on{color:var(--txt);background:rgba(127,208,255,.12)}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;overflow:hidden;background:linear-gradient(180deg,#04091a 0%,#0a1630 46%,#0d1b3a 78%,#060d1f 100%)}
+.stars,.stars2{position:absolute;inset:0;pointer-events:none}
+.stars{background-image:
+ radial-gradient(1.4px 1.4px at 22px 34px,#fff,transparent),
+ radial-gradient(1px 1px at 121px 84px,#cfe6ff,transparent),
+ radial-gradient(1.6px 1.6px at 233px 156px,#fff,transparent),
+ radial-gradient(1px 1px at 310px 46px,#ffe9c9,transparent),
+ radial-gradient(1.2px 1.2px at 87px 190px,#fff,transparent),
+ radial-gradient(1px 1px at 176px 250px,#cfe6ff,transparent),
+ radial-gradient(1.5px 1.5px at 340px 220px,#fff,transparent),
+ radial-gradient(1px 1px at 60px 300px,#fff,transparent),
+ radial-gradient(1.3px 1.3px at 260px 330px,#ffe9c9,transparent),
+ radial-gradient(1px 1px at 150px 120px,#fff,transparent);
+ background-size:380px 380px;opacity:.85;animation:twk 3.6s ease-in-out infinite alternate}
+.stars2{background-image:
+ radial-gradient(1px 1px at 44px 66px,#9fc6ff,transparent),
+ radial-gradient(1.2px 1.2px at 180px 20px,#fff,transparent),
+ radial-gradient(1px 1px at 300px 120px,#fff,transparent),
+ radial-gradient(1.4px 1.4px at 90px 260px,#ffe9c9,transparent),
+ radial-gradient(1px 1px at 350px 300px,#9fc6ff,transparent),
+ radial-gradient(1.2px 1.2px at 240px 200px,#fff,transparent);
+ background-size:520px 520px;opacity:.5;animation:twk 5.2s .8s ease-in-out infinite alternate}
+@keyframes twk{from{opacity:.28}to{opacity:.9}}
+.mtn{position:absolute;left:0;right:0;bottom:-2px;width:100%;height:auto;display:block}
+.hero-in{position:relative;z-index:2;text-align:center;padding:110px 22px 40vh}
+.kicker{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.32em;color:var(--ice);text-transform:uppercase;border:1px solid var(--line2);padding:8px 16px;border-radius:999px;background:rgba(10,22,48,.55)}
+.hero h1{font-family:var(--disp);font-weight:400;font-size:clamp(64px,14vw,168px);line-height:.95;letter-spacing:.015em;margin:22px 0 6px;text-transform:uppercase;background:linear-gradient(180deg,#ffffff 24%,#bcd6ff 55%,#5f7396 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero .sub{font-family:var(--disp);font-size:clamp(15px,2.6vw,24px);letter-spacing:.34em;color:var(--amber);text-transform:uppercase}
+.chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:26px}
+.chip{font-size:13px;font-weight:600;color:var(--txt);background:rgba(13,27,58,.66);border:1px solid var(--line2);padding:8px 14px;border-radius:999px}
+.chip b{color:var(--amber);font-weight:800}
+.scrollcue{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;color:var(--mut);font-size:11px;letter-spacing:.28em;text-transform:uppercase;animation:bob 2s infinite}
+@keyframes bob{0%,100%{transform:translate(-50%,0)}50%{transform:translate(-50%,8px)}}
+
+/* ---------- SECTION HEADS ---------- */
+.sec-kick{font-size:11px;font-weight:800;letter-spacing:.3em;color:var(--ice);text-transform:uppercase}
+.sec-title{font-family:var(--disp);font-weight:400;font-size:clamp(34px,5.4vw,52px);letter-spacing:.02em;text-transform:uppercase;line-height:1.05;margin:8px 0 10px}
+.sec-title .am{color:var(--amber)}
+.sec-sub{color:var(--mut);max-width:720px;font-size:15.5px}
+
+/* ---------- CARDS & GRIDS ---------- */
+.grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.grid5{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px}
+.stat-num{font-family:var(--disp);font-size:clamp(26px,3.4vw,38px);color:var(--amber);letter-spacing:.02em}
+.stat-lab{font-size:12.5px;color:var(--mut);font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-top:2px}
+.callout{background:linear-gradient(135deg,rgba(255,138,61,.16),rgba(255,180,84,.07));border:1px solid rgba(255,180,84,.4);border-radius:18px;padding:22px 24px;text-align:center}
+.callout .big{font-family:var(--disp);font-size:clamp(30px,5vw,46px);color:var(--amber)}
+.callout .lab{color:var(--mut);font-size:14px;margin-top:4px}
+
+/* ---------- TABLES ---------- */
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:14px;background:var(--panel)}
+table{width:100%;border-collapse:collapse;font-size:14px;min-width:560px}
+th{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);text-align:left;padding:12px 14px;border-bottom:1px solid var(--line2);background:rgba(18,37,76,.55)}
+td{padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top;color:var(--txt)}
+tr:last-child td{border-bottom:none}
+td.r,th.r{text-align:right}
+td.t{font-variant-numeric:tabular-nums;white-space:nowrap;font-weight:600;color:var(--amber)}
+tr.tot td{background:rgba(255,180,84,.09);font-weight:800;border-top:1px solid var(--line2)}
+.mut{color:var(--mut);font-size:13px}
+
+/* ---------- TIMELINE ---------- */
+.timeline{position:relative;margin:26px 0 8px;padding-left:8px}
+.timeline:before{content:"";position:absolute;left:57px;top:6px;bottom:6px;width:2px;background:linear-gradient(180deg,var(--ice),rgba(127,208,255,.08))}
+.tl{display:flex;gap:18px;padding:9px 0;position:relative}
+.tl-time{flex:0 0 62px;text-align:center;font-weight:800;font-size:13px;color:var(--ice);font-variant-numeric:tabular-nums;padding-top:3px}
+.tl-dot{flex:0 0 14px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--ice);margin-top:5px;z-index:1}
+.tl-body{flex:1;padding-bottom:6px}
+.tl-what{font-weight:700;font-size:15.5px}
+.tl-note{color:var(--mut);font-size:13.5px;margin-top:2px}
+.tl-owner{display:inline-block;font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);border:1px solid rgba(255,180,84,.35);border-radius:6px;padding:2px 8px;margin-top:7px}
+.tl.hot .tl-dot{border-color:var(--red);box-shadow:0 0 14px rgba(255,107,107,.7)}
+.tl.hot .tl-time{color:var(--red)}
+.tl.hot .tl-what{color:var(--red)}
+
+/* ---------- CREW ---------- */
+.crew{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.person{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px 14px;position:relative;transition:.25s}
+.person:hover{transform:translateY(-4px);border-color:var(--line2)}
+.person.lead{border-color:rgba(255,180,84,.5);background:linear-gradient(160deg,rgba(255,180,84,.10),var(--panel))}
+.person.treas{border-color:rgba(110,231,160,.45);background:linear-gradient(160deg,rgba(110,231,160,.09),var(--panel))}
+.p-pair{position:absolute;top:12px;right:12px;font-size:10px;font-weight:800;color:var(--dim);border:1px solid var(--line);border-radius:6px;padding:2px 7px;letter-spacing:.08em}
+.p-name{font-family:var(--disp);font-size:19px;letter-spacing:.03em;text-transform:uppercase;margin-bottom:4px;padding-right:40px}
+.p-role{font-size:12.5px;color:var(--mut);line-height:1.45}
+.badge{display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.16em;padding:3px 8px;border-radius:6px;text-transform:uppercase;margin-bottom:8px}
+.b-lead{background:rgba(255,180,84,.18);color:var(--amber);border:1px solid rgba(255,180,84,.4)}
+.b-sweep{background:rgba(127,208,255,.14);color:var(--ice);border:1px solid rgba(127,208,255,.35)}
+.b-treas{background:rgba(110,231,160,.14);color:var(--green);border:1px solid rgba(110,231,160,.4)}
+.b-x2{background:rgba(255,138,61,.16);color:var(--orange);border:1px solid rgba(255,138,61,.4)}
+
+/* ---------- PAIRS ---------- */
+.pairs{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.pair{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;text-align:center;transition:.25s}
+.pair:hover{transform:translateY(-4px)}
+.pair .L{font-family:var(--disp);font-size:30px;color:var(--amber)}
+.pair .names{font-weight:700;font-size:14px;margin:6px 0 2px}
+.pair .tag{font-size:11px;color:var(--mut);letter-spacing:.06em;text-transform:uppercase}
+.pair.hotp{border-color:rgba(255,180,84,.55);background:linear-gradient(170deg,rgba(255,180,84,.12),var(--panel))}
+.pair.hotp .tag{color:var(--amber)}
+
+/* ---------- PERSONAL BUY ---------- */
+.buy{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.buy .card{display:flex;flex-direction:column}
+.buy h3{font-family:var(--disp);font-size:20px;letter-spacing:.04em;text-transform:uppercase}
+.buy .mission{font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ice);margin:2px 0 10px}
+.buy ul{list-style:none;margin:0 0 12px}
+.buy li{font-size:13.5px;padding:7px 0 7px 20px;border-bottom:1px dashed var(--line);position:relative;color:var(--txt)}
+.buy li:before{content:"";position:absolute;left:2px;top:13px;width:8px;height:8px;border-radius:2px;background:var(--amber);transform:rotate(45deg);opacity:.8}
+.buy li span{color:var(--mut);float:right;font-variant-numeric:tabular-nums}
+.amount{margin-top:auto;font-family:var(--disp);font-size:26px;color:var(--green)}
+.amount small{font-family:var(--body);font-size:11px;color:var(--mut);display:block;letter-spacing:.08em;text-transform:uppercase}
+.ptag{display:inline-block;margin-top:10px;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--orange);border:1px dashed rgba(255,138,61,.5);border-radius:6px;padding:3px 8px}
+
+/* ---------- PACK ---------- */
+.packcols{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.check{list-style:none}
+.check li{font-size:14px;padding:8px 0 8px 30px;position:relative;border-bottom:1px dashed var(--line)}
+.check li:before{content:"";position:absolute;left:2px;top:11px;width:13px;height:13px;border:2px solid var(--ice);border-radius:4px;opacity:.65}
+.check li b{color:var(--txt)}
+.check li span{color:var(--mut);font-size:12.5px;display:block}
+.leave{background:rgba(255,107,107,.08);border:1px solid rgba(255,107,107,.35);border-radius:16px;padding:18px 20px;margin-top:14px}
+.leave h4{color:var(--red);font-size:12px;letter-spacing:.2em;text-transform:uppercase;margin-bottom:6px}
+.leave p{font-size:14px;color:var(--txt)}
+
+/* ---------- MISC ---------- */
+.alertbox{background:rgba(255,107,107,.09);border-left:4px solid var(--red);border-radius:0 12px 12px 0;padding:14px 18px;font-size:14px;margin:18px 0}
+.alertbox b{color:var(--red)}
+.goodbox{background:rgba(110,231,160,.07);border-left:4px solid var(--green);border-radius:0 12px 12px 0;padding:14px 18px;font-size:14px;margin:18px 0}
+.rules{counter-reset:r;list-style:none;margin-top:18px}
+.rules li{counter-increment:r;position:relative;padding:12px 0 12px 56px;border-bottom:1px dashed var(--line);font-size:14.5px}
+.rules li:before{content:counter(r,decimal-leading-zero);position:absolute;left:0;top:10px;font-family:var(--disp);font-size:24px;color:var(--amber);opacity:.9}
+.rules li span{color:var(--mut);font-size:13px;display:block}
+.contact{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px dashed var(--line);font-size:14.5px;flex-wrap:wrap}
+.contact .num{font-weight:800;color:var(--ice);font-variant-numeric:tabular-nums}
+.contact .num a{color:inherit}
+.btn{display:inline-flex;align-items:center;gap:9px;background:linear-gradient(135deg,var(--orange),var(--amber));color:#1a0e02;font-weight:800;font-size:14px;padding:12px 22px;border-radius:999px;letter-spacing:.02em;box-shadow:0 8px 24px rgba(255,138,61,.3);transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(255,138,61,.42)}
+.footer{border-top:1px solid var(--line);margin-top:70px;padding:44px 0 54px;text-align:center;background:linear-gradient(180deg,transparent,rgba(10,22,48,.7))}
+.footer .fbig{font-family:var(--disp);font-size:clamp(26px,4.6vw,44px);text-transform:uppercase;letter-spacing:.03em}
+.footer .fbig span{color:var(--amber)}
+.footer p{color:var(--mut);font-size:13.5px;margin-top:8px}
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+@media(max-width:900px){.crew,.pairs,.grid5{grid-template-columns:repeat(2,1fr)}.grid3,.buy{grid-template-columns:1fr}.grid2,.packcols{grid-template-columns:1fr}.hero-in{padding-bottom:34vh}}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="nav-in">
+  <div class="brand">K<b>▲</b> KABARAGALA</div>
+  <div class="navlinks">
+    <a href="#facts">Facts</a><a href="#crew">Crew</a><a href="#day1">Day 1</a><a href="#day2">Day 2</a><a href="#transport">Buses</a><a href="#gear">Gear</a><a href="#food">Food</a><a href="#money">Money</a><a href="#pack">Pack</a><a href="#safety">Safety</a>
+  </div>
+</div></nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero">
+  <div class="stars"></div><div class="stars2"></div>
+  <div class="hero-in">
+    <span class="kicker">Class Crew × 10 · Dolosbage Range</span>
+    <h1>Kabaragala</h1>
+    <div class="sub">Summit Camp · 1,506 m</div>
+    <div class="chips">
+      <span class="chip"><b>SAT 14 – SUN 15</b> NOV 2026</span>
+      <span class="chip">Sunrise <b>06:00</b> Sunday</span>
+      <span class="chip">Night <b>12–15°C</b> + wind</span>
+      <span class="chip"><b>8</b> first-timers · <b>2</b> leads</span>
+    </div>
+  </div>
+  <svg class="mtn" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <circle cx="1252" cy="112" r="62" fill="#e8f1ff" opacity=".08"/>
+    <circle cx="1252" cy="112" r="38" fill="#e8f1ff" opacity=".85"/>
+    <polygon points="0,320 120,240 260,300 400,180 540,290 700,150 860,280 1000,210 1160,290 1300,230 1440,300 1440,620 0,620" fill="#12254c" opacity=".92"/>
+    <polygon points="0,400 160,310 330,380 480,260 640,370 800,280 980,360 1120,300 1280,380 1440,330 1440,620 0,620" fill="#0d1b3a"/>
+    <polygon points="0,500 200,420 380,480 560,400 760,490 940,430 1140,500 1320,450 1440,490 1440,620 0,620" fill="#081228"/>
+    <circle cx="1080" cy="518" r="30" fill="#ff8a3d" opacity=".16"/>
+    <polygon points="1058,532 1080,504 1102,532" fill="#ff8a3d"/>
+    <polygon points="1074,532 1080,517 1086,532" fill="#ffd9a0"/>
+    <polygon points="0,560 240,510 480,555 720,505 960,550 1200,515 1440,555 1440,620 0,620" fill="#060d1f"/>
+  </svg>
+  <div class="scrollcue">Scroll — the whole plan lives here</div>
+</header>
+
+<!-- ================= FACTS ================= -->
+<section id="facts">
+<div class="wrap">
+  <div class="reveal"><span class="sec-kick">The Mission</span>
+  <h2 class="sec-title">One night on the <span class="am">roof of Dolosbage</span></h2>
+  <p class="sec-sub">Highest point of the Dolosbage range. Grassy, almost-level summit, a clear trail, and a camp shop owner a phone call away — the perfect first mountain for eight of us. One night on top, sunrise at 06:00, and a hard noon-bus deadline on Sunday.</p></div>
+  <div class="grid3" style="margin-top:26px">
+    <div class="card reveal"><div class="stat-num">1,506 m</div><div class="stat-lab">Summit altitude</div></div>
+    <div class="card reveal"><div class="stat-num">4–5 km</div><div class="stat-lab">Trail, one way · 2.5–3 h up</div></div>
+    <div class="card reveal"><div class="stat-num">05:00</div><div class="stat-lab">Bus leaves Pettah Saturday</div></div>
+    <div class="card reveal"><div class="stat-num">12:00</div><div class="stat-lab">Sunday — LAST bus home. Non-negotiable</div></div>
+    <div class="card reveal"><div class="stat-num">Rs 4,500</div><div class="stat-lab">Per head, to Janiru by Wed 12</div></div>
+    <div class="card reveal"><div class="stat-num">Nov Rain</div><div class="stat-lab">2nd Inter-Monsoon — pack for showers</div></div>
+  </div>
+  <div class="tbl reveal" style="margin-top:14px"><table>
+    <tr><th>Thing</th><th>Detail</th></tr>
+    <tr><td>Route</td><td>Pettah → Nawalapitiya → Ganadewi Kovila (trailhead) → summit — and back the same way</td></tr>
+    <tr><td>Sleep</td><td>Summit camp, 3 rented 4-person tents — one night only</td></tr>
+    <tr><td>Base contact</td><td>Pathum aiya · Kabaragala Hills Camping · <a href="tel:0779634812">077 963 4812</a> / <a href="tel:0778651683">077 865 1683</a> (WhatsApp works)</td></tr>
+    <tr><td>Master plan</td><td>Full 15-page PDF already on the WhatsApp group — this page is the team version</td></tr>
+  </table></div>
+</div>
+</section>
+
+<!-- ================= CREW ================= -->
+<section id="crew">
+<div class="wrap">
+  <div class="reveal"><span class="sec-kick">Who Does What</span>
+  <h2 class="sec-title">The <span class="am">Crew</span> &amp; Roles</h2>
+  <p class="sec-sub">Ten hikers, five buddy pairs. Your buddy is the person you look for at every stop, walk beside on the trail, and account for at every headcount. Nobody walks alone — ever.</p></div>
+  <div class="crew" style="margin-top:26px">
+    <div class="person lead reveal"><span class="p-pair">PAIR A</span><span class="badge b-lead">Lead 1</span><div class="p-name">Theekshana</div><div class="p-role">Trip lead — navigation, pace-setting, final decisions on the trail</div></div>
+    <div class="person lead reveal"><span class="p-pair">PAIR A</span><div class="p-name">Thadiyaa</div><div class="p-role">First-aid support &amp; photographer — keeps the medical kit alive and the memories coming</div></div>
+    <div class="person reveal"><span class="p-pair">PAIR B</span><span class="badge b-sweep">Lead 2 · Sweep</span><div class="p-name">Sanuja</div><div class="p-role">Always last hiker, co-navigator, holds the silent Rs 2,000 second wallet</div></div>
+    <div class="person reveal"><span class="p-pair">PAIR B</span><span class="badge b-sweep">Medic</span><div class="p-name">Joseph</div><div class="p-role">First-aid lead — carries the group medical kit, tapes blisters early</div></div>
+    <div class="person reveal"><span class="p-pair">PAIR C</span><span class="badge b-sweep">Time</span><div class="p-name">Ruwandika</div><div class="p-role">Timekeeper — owns the timeline, ticks all 10 names, calls every headcount</div></div>
+    <div class="person reveal"><span class="p-pair">PAIR C</span><span class="badge b-sweep">Camp</span><div class="p-name">Yasas</div><div class="p-role">Waste officer &amp; camp marshal — owns the trash bags, enforces lights-out</div></div>
+    <div class="person reveal"><span class="p-pair">PAIR D</span><span class="badge b-sweep">Cook 1</span><div class="p-name">Chanuda</div><div class="p-role">Cook crew 1 — carries and runs the gas set, fires up the Kotmee dinner</div></div>
+    <div class="person reveal"><span class="p-pair">PAIR D</span><span class="badge b-sweep">Cook 2 · Water</span><div class="p-name">Chetheen</div><div class="p-role">Cook crew 2 &amp; water officer — utensils, bottles, refills at every break</div></div>
+    <div class="person treas reveal"><span class="p-pair">PAIR E</span><span class="badge b-treas">Treasurer</span><span class="badge b-x2">+ Gear 1</span><div class="p-name">Janiru</div><div class="p-role">MONEY + GEAR in one pair of hands — collects Rs 4,500 from everyone, pays Pathum aiya, books and counts the tents, photographs every receipt</div></div>
+    <div class="person treas reveal"><span class="p-pair">PAIR E</span><span class="badge b-treas">Gear 2</span><div class="p-name">Randiew</div><div class="p-role">Gear officer 2 — lamps, rope, spare pegs, load balancing between packs</div></div>
+  </div>
+  <div class="goodbox reveal"><b>Why Janiru holds money AND gear:</b> the cash and the kit both meet at the same two places — Pathum aiya's counter and the WhatsApp group. One man books the gear, pays the bills, counts the tents and keeps the receipts. Zero confusion, zero "wait, who has the money?"</div>
+
+  <div class="reveal"><h2 class="sec-title" style="font-size:clamp(26px,4vw,38px);margin-top:44px">Buddy <span class="am">Pairs</span></h2></div>
+  <div class="pairs" style="margin-top:18px">
+    <div class="pair hotp reveal"><div class="L">A</div><div class="names">Theekshana + Thadiyaa</div><div class="tag">Lead &amp; Lens</div></div>
+    <div class="pair reveal"><div class="L">B</div><div class="names">Sanuja + Joseph</div><div class="tag">Sweep &amp; Medic</div></div>
+    <div class="pair reveal"><div class="L">C</div><div class="names">Ruwandika + Yasas</div><div class="tag">Clock &amp; Camp</div></div>
+    <div class="pair reveal"><div class="L">D</div><div class="names">Chanuda + Chetheen</div><div class="tag">The Kitchen</div></div>
+    <div class="pair reveal"><div class="L">E</div><div class="names">Janiru + Randiew</div><div class="tag">Cash &amp; Kit</div></div>
+  </div>
+  <p class="sec-sub reveal" style="margin-top:16px">Pair rule: at every rest stop Ruwandika calls the pair letter, both names answer. Toilet, photos, water refills — you go, your buddy goes. This one habit prevents 90% of the ways a first hike goes wrong.</p>
+</div>
+</section>
+
+<!-- ================= DAY 1 ================= -->
+<section id="day1">
+<div class="wrap">
+  <div class="reveal"><span class="sec-kick">Saturday · 14 November</span>
+  <h2 class="sec-title">Day 1 — <span class="am">Up the mountain</span></h2>
+  <p class="sec-sub">Everything that can be done in town gets finished in town — there are no shops between the trailhead and the summit. Follow the clock and you cook dinner in daylight.</p></div>
+  <div class="timeline reveal">
+    <div class="tl"><div class="tl-time">04:30</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Assemble — Pettah Central Bus Stand</div><div class="tl-note">Full roll call, shared loads distributed, nobody wanders off for tea</div><span class="tl-owner">Ruwandika ticks 10 names</span></div></div>
+    <div class="tl"><div class="tl-time">05:00</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Bus: Pettah → Nawalapitiya</div><div class="tl-note">~4.5 h. Snacks on the bus, leads re-count heads at every long stop</div></div></div>
+    <div class="tl"><div class="tl-time">09:30</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Arrive Nawalapitiya</div><div class="tl-note">Toilets, stretch, split into shopping teams</div></div></div>
+    <div class="tl"><div class="tl-time">09:45</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Hot rice &amp; curry lunch + the big shop</div><div class="tl-note">Team list is quick now: Kotmee ×12 + jumbo sausage bread ×12 — the pantry arrives with Thadiyaa, Chanuda &amp; Chetheen</div><span class="tl-owner">Janiru pays · keeps receipts</span></div></div>
+    <div class="tl"><div class="tl-time">11:15</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Bus: Nawalapitiya → Dolosbage direction</div><div class="tl-note">~Rs 200 · 1–1.5 h of winding estate roads. Motion-sickness pill now if you need one. Tell the conductor: "Ganadewi Kovila, Kabaragala trail"</div></div></div>
+    <div class="tl"><div class="tl-time">12:30</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Pathum aiya's rent spot — gear handover</div><div class="tl-note">Test stove flame, lamp charge, tent zips, pole counts on the spot. Fill every bottle free. Drop a WhatsApp location to family</div><span class="tl-owner">Janiru + Randiew</span></div></div>
+    <div class="tl"><div class="tl-time">13:30</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Trailhead — start hiking</div><div class="tl-note">Group photo, slow steady pace, 10-min break every 45–60 min</div><span class="tl-owner">Headcount every break</span></div></div>
+    <div class="tl"><div class="tl-time">16:30</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Summit plateau — choose campsite</div><div class="tl-note">Sheltered spot well back from the edge; groundsheets + rain covers on immediately (November rule)</div></div></div>
+    <div class="tl"><div class="tl-time">17:30</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Camp set — explore in daylight</div><div class="tl-note">Toilet spot 50 m downwind, lit-zone boundary agreed. Sunset ~17:50 — photos before it dips</div></div></div>
+    <div class="tl"><div class="tl-time">18:15</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Dinner shift</div><div class="tl-note">Kotmee on the gas set — everyone eats hot and refills fluids</div><span class="tl-owner">Chanuda + Chetheen</span></div></div>
+    <div class="tl"><div class="tl-time">19:30</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Cards &amp; camp circle</div><div class="tl-note">Headlamps on, all trash into Yasas's one bag, nobody beyond the lit zone without their buddy</div></div></div>
+    <div class="tl"><div class="tl-time">21:30</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Lights out</div><div class="tl-note">Sleep in your thermal layer, phones on airplane mode, leads set the 05:15 alarm</div></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ================= DAY 2 ================= -->
+<section id="day2">
+<div class="wrap">
+  <div class="reveal"><span class="sec-kick">Sunday · 15 November</span>
+  <h2 class="sec-title">Day 2 — <span class="am">Sunrise &amp; the race to the bus</span></h2>
+  <p class="sec-sub">Planned backwards from one hard number: the last Nawalapitiya → Colombo bus leaves at 12:00 noon. Every line below is a deadline, not a suggestion.</p></div>
+  <div class="alertbox reveal"><b>HARD DEADLINE — 12:00 noon.</b> Last direct bus to Colombo. Janiru buys 10 tickets, Ruwandika counts 10 bodies on board before the bus moves. Miss it and fallbacks cost Rs 1,500–3,000+ extra per head.</div>
+  <div class="timeline reveal">
+    <div class="tl"><div class="tl-time">05:15</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Wake up, pack sleeping gear</div><div class="tl-note">Warm layer on before leaving the tent; mats rolled and bags zipped in the dark</div></div></div>
+    <div class="tl"><div class="tl-time">05:45</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Assembly at the viewpoint</div><div class="tl-note">Headlamps on, nobody wanders in the dark — pairs stand together</div></div></div>
+    <div class="tl"><div class="tl-time">06:00</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Sunrise from the summit</div><div class="tl-note">15 minutes of photos, then breakfast — the sun waits for no one</div></div></div>
+    <div class="tl"><div class="tl-time">06:15</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Breakfast — zero cooking</div><div class="tl-note">Jumbo sausage bread + bananas, so nothing slows the clock</div></div></div>
+    <div class="tl"><div class="tl-time">07:00</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Break camp completely</div><div class="tl-note">Tents down, pegs and poles counted against the list; pack out every scrap of trash</div><span class="tl-owner">Janiru + Randiew</span></div></div>
+    <div class="tl"><div class="tl-time">07:30</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Descent starts</div><div class="tl-note">Same trail down, toes-first steps to save the knees, Sanuja sweeps from the back</div></div></div>
+    <div class="tl"><div class="tl-time">09:15</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Pathum aiya's — return the gear</div><div class="tl-note">Full inventory check together, settle any balance, refill bottles, face wash</div><span class="tl-owner">Janiru</span></div></div>
+    <div class="tl"><div class="tl-time">10:00</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Bus: Ganadewi Kovila → Nawalapitiya</div><div class="tl-note">No bus in 20 minutes = three-wheel fallback immediately, chartered as one group</div></div></div>
+    <div class="tl"><div class="tl-time">11:15</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Nawalapitiya — 45-min buffer</div><div class="tl-note">Lunch packets for the ride if wanted. Everyone AT the bus stand by 11:30 — not walking toward it</div></div></div>
+    <div class="tl hot"><div class="tl-time">12:00</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">HARD DEADLINE — last bus to Colombo</div><div class="tl-note">Boarding confirmed by 11:50. This is the one failure the plan cannot absorb cheaply</div><span class="tl-owner">Janiru buys · Ruwandika counts</span></div></div>
+    <div class="tl"><div class="tl-time">16:30</div><div class="tl-dot"></div><div class="tl-body"><div class="tl-what">Arrive Pettah — trip complete</div><div class="tl-note">Photos to the group, final refund announced on the bus</div><span class="tl-owner">Janiru settles up</span></div></div>
+  </div>
+</div>
+</section>
+
+<!-- ================= TRANSPORT ================= -->
+<section id="transport">
+<div class="wrap">
+  <div class="reveal"><span class="sec-kick">Getting There &amp; Back</span>
+  <h2 class="sec-title">Buses &amp; <span class="am">Fares</span></h2>
+  <p class="sec-sub">Four bus legs, no private transport — carry small notes, conductors rarely change anything above Rs 1,000, and keep every ticket until Pettah.</p></div>
+  <div class="tbl reveal" style="margin-top:22px"><table>
+    <tr><th>Leg</th><th class="r">Fare pp</th><th>Time</th><th>Notes</th></tr>
+    <tr><td>Pettah → Nawalapitiya</td><td class="r t">~ Rs 500</td><td>~4.5 h</td><td>Direct 05:00 bus — board early, sit together</td></tr>
+    <tr><td>Nawalapitiya → Ganadewi Kovila</td><td class="r t">Rs 200</td><td>1–1.5 h</td><td>Dolosbage bus — ask the conductor to call the stop</td></tr>
+    <tr><td>Ganadewi Kovila → Nawalapitiya</td><td class="r t">Rs 200</td><td>1–1.5 h</td><td>Sunday buses are sparse — 20-min rule, then three-wheelers</td></tr>
+    <tr><td>Nawalapitiya → Colombo</td><td class="r t">~ Rs 1,000</td><td>~4.5 h</td><td><b style="color:var(--red)">LAST BUS 12:00 noon</b> — schedule risk is identical on any class</td></tr>
+    <tr class="tot"><td>Total transport</td><td class="r t">~ Rs 1,900</td><td></td><td>Budgeted per person</td></tr>
+  </table></div>
+  <p class="sec-sub reveal" style="margin-top:14px">Three-wheel fallback: ~Rs 1,500–2,500 per whole vehicle → Rs 150–250 per head for ten. Always charter one vehicle together — the option that must never trigger is the Rs 15,000–25,000 private van.</p>
+</div>
+</section>
+
+<!-- ================= GEAR ================= -->
+<section id="gear">
+<div class="wrap">
+  <div class="reveal"><span class="sec-kick">Item by Item · Not the Package</span>
+  <h2 class="sec-title">Gear <span class="am">Rental</span></h2>
+  <p class="sec-sub">We rent item-by-item instead of the Rs 8,950 package — fewer, better pieces, no BBQ-grill filler. <b style="color:var(--amber)">Janiru books everything by Wed 12 Nov</b> and confirms a 12:30 Saturday pickup.</p></div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;margin:20px 0" class="reveal">
+    <a class="btn" href="tel:0779634812">Call Pathum aiya — 077 963 4812</a>
+    <a class="btn" style="background:rgba(127,208,255,.14);color:var(--ice);box-shadow:none;border:1px solid var(--line2)" href="https://wa.me/94779634812" target="_blank" rel="noopener">WhatsApp 077 865 1683</a>
+  </div>
+  <div class="tbl reveal"><table>
+    <tr><th>Item</th><th style="text-align:center">Qty</th><th class="r">Rate</th><th class="r">Total</th><th>Carried by</th></tr>
+    <tr><td>4-person double-layer auto tent</td><td style="text-align:center">3</td><td class="r">1,200</td><td class="r">3,600</td><td>Janiru · Randiew · Sanuja</td></tr>
+    <tr><td>Ground sheet</td><td style="text-align:center">3</td><td class="r">250</td><td class="r">750</td><td>Packed with each tent</td></tr>
+    <tr><td>Full rain cover</td><td style="text-align:center">3</td><td class="r">400</td><td class="r">1,200</td><td>Non-negotiable in the inter-monsoon</td></tr>
+    <tr><td>Gas set (stove + cylinder)</td><td style="text-align:center">1</td><td class="r">1,500</td><td class="r">1,500</td><td>Chanuda</td></tr>
+    <tr><td>Utensil / bhajana set</td><td style="text-align:center">1</td><td class="r">500</td><td class="r">500</td><td>Chetheen</td></tr>
+    <tr><td>Rechargeable lamp</td><td style="text-align:center">2</td><td class="r">300</td><td class="r">600</td><td>Joseph + Thadiyaa</td></tr>
+    <tr><td>Sleeping mat</td><td style="text-align:center">10</td><td class="r">100</td><td class="r">1,000</td><td>One per hiker, strapped outside packs</td></tr>
+    <tr><td>Rope coil</td><td style="text-align:center">1</td><td class="r">150</td><td class="r">150</td><td>Randiew — wind lashing + drying line</td></tr>
+    <tr><td>5 L water bottle (empty, to fill)</td><td style="text-align:center">2</td><td class="r">100</td><td class="r">200</td><td>Chetheen — drinking water at the shop is free</td></tr>
+    <tr class="tot"><td>Core total ≈ Rs 950 pp</td><td></td><td></td><td class="r">9,500</td><td>Booked + paid by Janiru</td></tr>
+    <tr><td>Optional: 4 torches · dry bag · 2 toilet rolls · lighter · card pack</td><td style="text-align:center">—</td><td class="r">—</td><td class="r">1,810</td><td>≈ Rs 180 pp — decided at Thursday's pack meeting</td></tr>
+  </table></div>
+  <div class="goodbox reveal"><b>Shop rule:</b> test everything before paying — light the stove, zip every door, count poles and pegs out loud with Pathum aiya watching. Problems found in his yard cost nothing; problems found on the summit cost the night. Bring paper plates and cups from home.</div>
+</div>
+</section>
+
+<!-- ================= FOOD + PERSONAL BUY ================= -->
+<section id="food">
+<div class="wrap">
+  <div class="reveal"><span class="sec-kick">Simple · Hot · Calorie-Heavy</span>
+  <h2 class="sec-title">Food &amp; <span class="am">Water</span></h2>
+  <p class="sec-sub">The menu is deliberately boring — impossible to get wrong with one burner and ten cold hands. Breakfast needs zero cooking, so the noon bus is never at risk.</p></div>
+  <div class="grid3" style="margin-top:22px">
+    <div class="card reveal"><div class="stat-lab" style="color:var(--amber)">Saturday lunch</div><p style="font-size:14px;margin-top:6px">Rice &amp; curry in Nawalapitiya, ~Rs 450 — everyone buys their own plate</p></div>
+    <div class="card reveal"><div class="stat-lab" style="color:var(--amber)">Summit dinner</div><p style="font-size:14px;margin-top:6px">Kotmee instant kottu, 1–2 packs each, cooked on the gas set by the kitchen pair</p></div>
+    <div class="card reveal"><div class="stat-lab" style="color:var(--amber)">Sunday breakfast</div><p style="font-size:14px;margin-top:6px">Jumbo sausage bread + bananas — zero cooking, straight after sunrise</p></div>
+  </div>
+  <p class="sec-sub reveal" style="margin-top:14px"><b style="color:var(--ice)">Water discipline:</b> fill 1.5–2 L per person free at Pathum aiya's before the climb, plus two rented 5 L bottles for cooking. No reliable water on the plateau, stream water never drunk untreated. Chetheen checks every bottle at every break.</p>
+
+  <div class="reveal" style="margin-top:52px"><span class="sec-kick" style="color:var(--orange)">Personal Money · Outside the Team Budget</span>
+  <h2 class="sec-title" style="font-size:clamp(28px,4.4vw,42px)">The <span class="am">Personal Buy Mission</span></h2>
+  <p class="sec-sub">Three legends take the whole pantry list off the team float — bought with <b style="color:var(--orange)">their own money</b>, on top of their Rs 4,500 share. The team shop shrinks to two lines and everyone's food share drops.</p></div>
+  <div class="buy" style="margin-top:22px">
+    <div class="card reveal">
+      <h3>Thadiyaa</h3><div class="mission">Fresh &amp; First-Aid Run</div>
+      <ul>
+        <li>Bananas + firm seasonal fruit <span>Rs 1,000</span></li>
+        <li>ORS sachets ×10 + a lemon or two <span>Rs 300</span></li>
+      </ul>
+      <div class="amount">Rs 1,300<small>his own money</small></div>
+      <span class="ptag">Fresh buy · morning of the trip</span>
+    </div>
+    <div class="card reveal">
+      <h3>Chanuda</h3><div class="mission">Camp Kitchen Box</div>
+      <ul>
+        <li>Milk powder, sugar, plain tea packets <span>Rs 500</span></li>
+        <li>Salt, matches, chilli &amp; flavour sachets <span>Rs 250</span></li>
+      </ul>
+      <div class="amount">Rs 750<small>his own money</small></div>
+      <span class="ptag">Literally his cooking kit as Cook 1</span>
+    </div>
+    <div class="card reveal">
+      <h3>Chetheen</h3><div class="mission">Energy &amp; Morale Load</div>
+      <ul>
+        <li>Chocolate, glucose biscuits, energy bars <span>Rs 1,500</span></li>
+      </ul>
+      <div class="amount">Rs 1,500<small>his own money</small></div>
+      <span class="ptag">The trail snack bank — he runs the breaks</span>
+    </div>
+  </div>
+  <div class="goodbox reveal"><b>Rs 3,550 the team float never has to carry.</b> Gents — your Rs 4,500 team share stays as normal; this list is personal money on top. Respect. The Nawalapitiya shop for everyone else is now a 20-minute sprint: Kotmee ×12 (Rs 3,600) + jumbo sausage bread ×12 (Rs 2,200).</div>
+</div>
+</section>
+
+<!-- ================= MONEY ================= -->
+<section id="money">
+<div class="wrap">
+  <div class="reveal"><span class="sec-kick">One Number · One Man</span>
+  <h2 class="sec-title">The <span class="am">Money</span></h2></div>
+  <div class="callout reveal" style="margin:20px 0 26px">
+    <div class="big">Rs 4,500 per head</div>
+    <div class="lab">Pay <b style="color:var(--txt)">Janiru</b> by Wednesday 12 November — ~Rs 45,000 group float. Refunds go back per head on the Sunday bus.</div>
+  </div>
+  <div class="tbl reveal"><table style="min-width:0">
+    <tr><th>Line item</th><th class="r">Rs pp</th></tr>
+    <tr><td>Transport — Pettah → Nawalapitiya</td><td class="r">500</td></tr>
+    <tr><td>Transport — Dolosbage bus, both directions</td><td class="r">400</td></tr>
+    <tr><td>Transport — Nawalapitiya → Colombo (last bus)</td><td class="r">1,000</td></tr>
+    <tr><td>Gear share — core rentals (Rs 9,500 / 10)</td><td class="r">950</td></tr>
+    <tr><td>Gear share — optional add-ons (Rs 1,810 / 10)</td><td class="r">180</td></tr>
+    <tr><td>Food share — team list: Kotmee + sausage bread (Rs 5,800 / 10)</td><td class="r">580</td></tr>
+    <tr><td>Lunch Day 1 — rice &amp; curry, bought on the spot</td><td class="r">450</td></tr>
+    <tr><td>Emergency buffer</td><td class="r">350</td></tr>
+    <tr class="tot"><td>Total per person</td><td class="r t">~ 4,410</td></tr>
+    <tr class="tot"><td>Collected</td><td class="r t">4,500</td></tr>
+  </table></div>
+  <p class="sec-sub reveal" style="margin-top:14px">Snacks, fruit, tea kit and pantry items are <b style="color:var(--orange)">not in this table</b> — Thadiyaa, Chanuda &amp; Chetheen cover those personally (see the Buy Mission above). Money rules: Janiru holds the main float and photographs every receipt to the group the moment it's issued; Sanuja holds a silent Rs 2,000 second wallet; the two never travel in the same shopping team. Personal spending cap Rs 500 — there is nothing to buy on a mountain.</p>
+</div>
+</section>
+
+<!-- ================= PACK ================= -->
+<section id="pack">
+<div class="wrap">
+  <div class="reveal"><span class="sec-kick">8–10 kg · Pack Dry</span>
+  <h2 class="sec-title">Pack <span class="am">Checklist</span></h2>
+  <p class="sec-sub">One 40–55 L backpack each with a rain cover or polythene liner, plus one shared duffel per buddy pair. The test for every item: will I need this on a windy 1,500-m plateau in November? If not, it stays home.</p></div>
+  <div class="packcols" style="margin-top:22px">
+    <div class="card reveal">
+      <div class="stat-lab" style="color:var(--amber);margin-bottom:8px">Per person — compulsory</div>
+      <ul class="check">
+        <li><b>40–55 L backpack + rain cover / liner</b><span>November showers find every dry-bag-less pack</span></li>
+        <li><b>2 warm layers + windproof jacket</b><span>12–15°C nights with wind on the plateau</span></li>
+        <li><b>Raincoat or poncho</b><span>Showers are the base case, not the exception</span></li>
+        <li><b>Full change of clothes + 3 pairs of socks</b><span>In polythene — dry socks are morale</span></li>
+        <li><b>Trainers / trekking shoes with grip</b><span>Broken-in only — new shoes mean blisters</span></li>
+        <li><b>Torch or headlamp + spare batteries</b><span>05:15 wake-up and the lit-zone rule</span></li>
+        <li><b>1.5–2 L water in bottles</b><span>Free refill at the shop before the climb</span></li>
+        <li><b>Plate, spoon, mug from home</b><span>Shop rentals cost extra — home kit is free</span></li>
+        <li><b>Personal medicines + mini first aid</b><span>Plasters, paracetamol — blisters happen</span></li>
+        <li><b>NIC / student ID + photo copy on phone</b></li>
+        <li><b>Toilet kit</b><span>Soap piece, wet wipes, toothbrush, tissue roll</span></li>
+        <li><b>Power bank (full) + phone</b><span>Cold kills batteries — airplane mode saves them</span></li>
+        <li><b>Slippers + cap, sunglasses, sunscreen</b><span>Feet recover at camp; UV is sharp at altitude</span></li>
+        <li><b>Two garbage bags</b><span>One for wet gear, one for pack-out trash</span></li>
+      </ul>
+    </div>
+    <div class="card reveal">
+      <div class="stat-lab" style="color:var(--amber);margin-bottom:8px">Group kit — split between packs</div>
+      <div class="tbl" style="background:transparent"><table style="min-width:0">
+        <tr><th>Kit</th><th>Owner</th></tr>
+        <tr><td>First aid — band-aids, crepe, antiseptic, paracetamol, ORS, blister pads, motion pills</td><td>Joseph + Thadiyaa</td></tr>
+        <tr><td>Cooking — gas set, utensils, serving spoon, sponge + soap</td><td>Chanuda + Chetheen</td></tr>
+        <tr><td>Shelter — 3 tents, ground sheets, rain covers, rope, spare pegs</td><td>Janiru + Randiew</td></tr>
+        <tr><td>Light &amp; fire — 2 lamps, 4 torches, lighter, 2 match boxes</td><td>Joseph + Randiew</td></tr>
+        <tr><td>Money &amp; papers — main float, second wallet, printed plan</td><td>Janiru + Sanuja</td></tr>
+      </table></div>
+      <div class="leave">
+        <h4>Leave at home</h4>
+        <p>Jeans (cold, slow to dry) · brand-new shoes (blisters) · white clothes (red mud is forever) · umbrellas (plateau wind destroys them) · anything valuable you wouldn't strap to your back up a mountain.</p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ================= SAFETY ================= -->
+<section id="safety">
+<div class="wrap">
+  <div class="reveal"><span class="sec-kick">Non-Negotiable</span>
+  <h2 class="sec-title">Safety <span class="am">Rules</span></h2>
+  <p class="sec-sub">Kabaragala is a friendly first mountain — but it's still a 1,500-m plateau in the inter-monsoon with ten people who've never done this before. These rules exist so we spend the trip enjoying the view.</p></div>
+  <ol class="rules reveal">
+    <li>Buddy system always<span>Nobody walks, photographs, or hits the toilet spot alone — pairs move as pairs</span></li>
+    <li>Stay on the visible trail<span>Shortcuts through tea and pine slopes are how ankles and directions get lost</span></li>
+    <li>No cliff-edge photos<span>Two metres back from any drop, photographer on the safe side</span></li>
+    <li>Headcount at every break<span>Ruwandika calls the pair letter, both names answer. Sixty seconds, every time</span></li>
+    <li>Order of march<span>Theekshana sets the pace in front, Sanuja sweeps at the back — nobody ahead, nobody behind</span></li>
+    <li>Three whistle blasts = STOP<span>The group holds where it is until the leads reach the whistler</span></li>
+    <li>Phones on airplane mode<span>One phone per pair stays charged and reachable — power bank is for emergencies first</span></li>
+  </ol>
+  <div class="grid2" style="margin-top:22px">
+    <div class="card reveal"><div class="stat-lab" style="color:var(--amber)">Weather &amp; cold</div><p style="font-size:14px;margin-top:6px">Rain covers go on the moment tents are pitched. Heavy shower or lightning mid-hike: shelter in place 30 minutes, don't push on. Dinner eaten hot, everyone sleeps in their thermal layer. <b>Abort rule:</b> continuous heavy rain forecast on Friday morning = trip postpones. A lost weekend costs nothing; hypothermia practice costs plenty.</p></div>
+    <div class="card reveal"><div class="stat-lab" style="color:var(--amber)">Leeches, blisters, water</div><p style="font-size:14px;margin-top:6px">Socks over trouser hems, soap-salt spray, check ankles at every break. Hot spot on your foot = stop immediately, Joseph tapes it — ten minutes early saves a limp on the descent. Drink even when not thirsty; one ORS sachet per person per day. Stream water: never untreated, full stop.</p></div>
+  </div>
+  <div class="card reveal" style="margin-top:14px">
+    <div class="stat-lab" style="color:var(--amber);margin-bottom:4px">Emergency contacts</div>
+    <div class="contact"><span>Pathum aiya — Kabaragala Hills Camping (trail, vehicle access, local help)</span><span class="num"><a href="tel:0779634812">077 963 4812</a> / <a href="tel:0778651683">077 865 1683</a></span></div>
+    <div class="contact"><span>Ambulance — Suwa Seriya (free)</span><span class="num"><a href="tel:1990">1990</a></span></div>
+    <div class="contact"><span>Police emergency</span><span class="num"><a href="tel:119">119</a></span></div>
+    <div class="contact" style="border-bottom:none"><span>Nearest hospital — Nawalapitiya Base, on the route back</span><span class="num">Family point: WhatsApp live location at trailhead + summit</span></div>
+  </div>
+  <div class="alertbox reveal"><b>If someone is separated:</b> the group returns to the last junction and holds; the separated hiker stays put and blows three blasts every few minutes. Movement in opposite directions is how people are truly lost.</div>
+</div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="wrap">
+    <div class="fbig">See you at Pettah · <span>04:30 AM</span></div>
+    <p>Saturday 14 November 2026 · Pettah Central Bus Stand · roll call 04:30, wheels roll 05:00</p>
+    <p style="margin-top:16px"><a class="btn" href="tel:0779634812">Book gear now — Pathum aiya 077 963 4812</a></p>
+    <p style="margin-top:22px;color:var(--dim)">Rs 4,500 to Janiru by Wed 12 · buddy pairs hold · the mountain does the rest</p>
+  </div>
+</footer>
+
+<script>
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const secs=[...document.querySelectorAll('section[id]')],links=[...document.querySelectorAll('.navlinks a')];
+const navIO=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+e.target.id))}})},{rootMargin:'-40% 0px -55% 0px'});
+secs.forEach(s=>navIO.observe(s));
+</script>
+</body>
+</html>
